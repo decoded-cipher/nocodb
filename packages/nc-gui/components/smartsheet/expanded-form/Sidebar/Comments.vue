@@ -635,7 +635,7 @@ onBeforeUnmount(() => {
                         data-testid="nc-comment-attach-btn"
                         @click="openEditFilePicker"
                       >
-                        <GeneralIcon v-if="!isEditAttachmentUploading" icon="ncPaperclip" class="text-md" />
+                        <GeneralIcon v-if="!isEditAttachmentUploading" icon="lucidePaperclip" class="text-md" />
                       </NcButton>
                     </NcTooltip>
                   </template>
@@ -701,7 +701,7 @@ onBeforeUnmount(() => {
                 data-testid="nc-comment-attach-btn"
                 @click="openFilePicker"
               >
-                <GeneralIcon v-if="!isAttachmentUploading" icon="ncPaperclip" class="text-md" />
+                <GeneralIcon v-if="!isAttachmentUploading" icon="lucidePaperclip" class="text-md" />
               </NcButton>
             </NcTooltip>
           </template>
