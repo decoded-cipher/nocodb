@@ -21438,6 +21438,10 @@
         "title": "Attachment Model",
         "type": "object",
         "properties": {
+          "id": {
+            "type": "string",
+            "description": "FileReference ID for the attachment"
+          },
           "data": {
             "description": "Data for uploading"
           },
@@ -22767,6 +22771,13 @@
             "type": "string",
             "description": "Row ID",
             "example": "3"
+          },
+          "attachments": {
+            "type": "array",
+            "description": "Files attached to the comment",
+            "items": {
+              "$ref": "#/components/schemas/Attachment"
+            }
           }
         },
         "required": [
@@ -22801,6 +22812,13 @@
             "type": "string",
             "description": "Foreign Key to Model",
             "example": "md_ehn5izr99m7d45"
+          },
+          "attachments": {
+            "type": "array",
+            "description": "Files attached to the comment",
+            "items": {
+              "$ref": "#/components/schemas/Attachment"
+            }
           }
         }
       },
@@ -30307,6 +30325,13 @@
           "is_deleted": {
             "type": "boolean",
             "description": "Whether the comment has been deleted by the user or not"
+          },
+          "attachments": {
+            "type": "array",
+            "description": "Files attached to the comment",
+            "items": {
+              "$ref": "#/components/schemas/Attachment"
+            }
           }
         }
       },
